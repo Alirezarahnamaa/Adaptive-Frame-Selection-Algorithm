@@ -1,6 +1,6 @@
 def Algoritm(frameOne, frameTwo):
     cMul = 2.0*frameOne * frameTwo
-    cPow = pow(frameOne, 2.0)+pow(frameTwo, 2.0)
+    cPow = np.sqrt(pow(frameOne, 2.0)+pow(frameTwo, 2.0))
     cDivid = np.true_divide(cMul, cPow, where=(cMul != 0) | (cPow != 0))
     cMean = np.mean(cDivid)
     
